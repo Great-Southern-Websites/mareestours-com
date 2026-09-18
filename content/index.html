@@ -1,15 +1,104 @@
 ---
-title: "Home"
-description: "BUILDER: one-sentence description of the business for search engines."
-image: logo.png
+title: "Maree's Tours"
+description: "Coach day trips, theatre outings, extended Australian tours and overseas holidays with Maree Hutchins, running from Seaford and Frankston since 2000."
+image: bright-township.jpg
 layout: default
+nav: home
 ---
-<!-- BUILDER: hero, then the sections that mirror the original home page. -->
-<section class="hero">
+<section class="opener">
+  <div class="container opener-grid">
+    <div>
+      <p class="eyebrow">Est 2000</p>
+      <h1>Day trips, theatre and holidays, with Maree, since 2000</h1>
+      <p class="lead">Day trips may include a cooked lunch, a raffle and lots of laughter while travelling in a 5-star coach. Extended trips go all over Australia, and overseas trips have taken us to New Zealand, Vietnam, Cambodia, Canada and Alaska, and China.</p>
+      <ul class="opener-facts">
+        <li>Coach trips leave from Seaford</li>
+        <li>Groups of 25 or more</li>
+        <li>Book by phone or by mail</li>
+      </ul>
+      <p class="actions">
+        <a class="btn btn-primary" href="{=site.url('day-trips')}">See the day trips</a>
+        <a class="btn btn-outline" href="{=site.url('contact')}">Contact Maree</a>
+      </p>
+    </div>
+    <figure class="photo">
+      <img src="{=site.url('images/bright-township.jpg')}" alt="The main street of Bright in autumn, with red and gold trees over the shopfronts" width="1598" height="834">
+      <figcaption>Bright township, the destination of our five day Bright Chalet tour</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container with-aside">
+    <div class="prose">
+      <p class="eyebrow">About</p>
+      <h2>How Maree's Tours began</h2>
+      <p>In the late 1990s, while working at the Seaford Hotel, I was asked to organise day trips for the patrons. When I left the hotel, I realised that they were not going to continue with these trips. Having met so many wonderful people, I felt compelled to take on the trips myself, so I registered Maree's Tours, and haven't looked back.</p>
+      <p>Now I am an independent operator and have expanded from day trips and theatre shows to interstate trips and overseas trips, working in conjunction with a licensed travel agent. I have a passion for ensuring that everyone on my trips has a good time, meets new friends and knows that I am around if they have any concerns.</p>
+      <p>Day trips may include a cooked lunch, a raffle and lots of laughter while travelling in a 5-star coach. We have travelled to many varied places around Victoria and have always found new things to see and new places to visit. Extended trips have been varied throughout Australia. Overseas trips have included New Zealand, Vietnam, Cambodia, Canada and Alaska, and China. As the overseas trips have been so popular, I had decided to try and include an overseas trip each year, but COVID interrupted that.</p>
+      <p>People feel more comfortable travelling with a group, especially with a leader like me who will assist, along with the overseas tour leader, to resolve any hiccups that may occur. Luckily we have not experienced any problems on our trips so far. Touch wood. Travelling with someone like me ensures that it is indeed a holiday and not a stressful time for you.</p>
+      <p>So come and join us.</p>
+      <p class="signoff"><span class="script">Maree Hutchins</span><span>Maree's Tours</span></p>
+    </div>
+    <aside class="aside">
+      <figure class="photo portrait">
+        <img src="{=site.url('images/river-gorge.jpg')}" alt="A small boat on a still green river between steep, wooded gorge walls, with a covered bridge behind" width="1178" height="1600" loading="lazy">
+        <figcaption>On the water, one of our overseas trips</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="{=site.url('images/vietnam.jpg')}" alt="A thatched open-sided pavilion among palms and lotus ponds in Vietnam" width="1134" height="738" loading="lazy">
+        <figcaption>Vietnam</figcaption>
+      </figure>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="leaflet">
   <div class="container">
-    <p class="eyebrow">Welcome</p>
-    <h1>Maree's Tours</h1>
-    <p class="lead">Replace this with the business's own words.</p>
-    <p class="hero-actions"><a class="btn btn-primary" href="{=site.url('contact')}">Contact us</a></p>
+    <div class="with-aside">
+      <div>
+        <p class="eyebrow">On the leaflet</p>
+        <h2>Trips on the current leaflet</h2>
+        <ol class="trips">
+          <li class="trip">
+            <div class="trip-date"><span class="month">Aug</span><span class="day">12</span><span class="weekday">Wed</span></div>
+            <div class="trip-body"><h3><a href="{=site.url('day-trips')}">Abbotsford Convent</a></h3><p class="when">Day trip, Wednesday 12 August 2026</p><p>A guided tour of the Convent and its gardens, followed by lunch. Maximum 25.</p></div>
+            <div class="trip-cost">$125<small>per person</small></div>
+          </li>
+          <li class="trip">
+            <div class="trip-date"><span class="month">Aug</span><span class="day">31</span><span class="weekday">Mon</span></div>
+            <div class="trip-body"><h3><a href="{=site.url('extended-trips')}">Bright Chalet and surrounding areas</a></h3><p class="when">5 days and 4 nights, Monday 31 August to Friday 4 September 2026</p><p>Harrietville, Wandiligong, Mount Buffalo, Beechworth and Milawa from a cosy alpine chalet.</p></div>
+            <div class="trip-cost">$1195<small>$300 single supplement</small></div>
+          </li>
+          <li class="trip">
+            <div class="trip-date"><span class="month">Sep</span><span class="day">16</span><span class="weekday">Wed</span></div>
+            <div class="trip-body"><h3><a href="{=site.url('day-trips')}">Como House</a></h3><p class="when">Day trip, Wednesday 16 September 2026</p><p>The White House on the Hill overlooking the Yarra, then lunch.</p></div>
+            <div class="trip-cost">$95<small>per person</small></div>
+          </li>
+          <li class="trip">
+            <div class="trip-date"><span class="month">Dec</span><span class="day">11</span><span class="weekday">Fri</span></div>
+            <div class="trip-body"><h3><a href="{=site.url('overseas-trips')}">10 Day New Zealand Tour</a></h3><p class="when">11 to 19 December 2026</p><p>Return airfares, nine nights of 4 star accommodation, a rail trip, two cruises and most meals.</p></div>
+            <div class="trip-cost">$6629<small>$1580 single supplement</small></div>
+          </li>
+        </ol>
+        <p class="actions">
+          <a class="btn btn-outline" href="{=site.url('day-trips')}">All day trips</a>
+          <a class="btn btn-outline" href="{=site.url('theatre-events')}">Theatre events</a>
+        </p>
+      </div>
+      <aside class="aside">
+        <div class="note">
+          <p><strong>The leaflet.</strong> Our latest leaflet is ready for collection at Flourish Café, or I can post it out once a stamped self-addressed envelope has been received. The leaflet lists all upcoming trips.</p>
+        </div>
+        <div class="note">
+          <p><strong>Numbers.</strong> All trips are based on a minimum of 25 passengers in order to go ahead, and payment is required before each trip. I rely on you to promote our trips to your social clubs and friends.</p>
+        </div>
+        <p><a href="{=site.url('contact')}">Contact Maree</a> to book a seat or ask about a trip.</p>
+        <figure class="photo">
+          <img src="{=site.url('images/heronswood.jpg')}" alt="The gardens at Heronswood, with clipped hedges and gravel paths above the blue of Port Phillip Bay" width="1587" height="817" loading="lazy">
+          <figcaption>Heronswood, one of our past day trips</figcaption>
+        </figure>
+      </aside>
+    </div>
   </div>
 </section>

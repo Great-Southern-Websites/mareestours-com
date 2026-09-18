@@ -1,19 +1,23 @@
+{@io.quarkiverse.roq.frontmatter.runtime.model.Page page}
 {@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
 <header class="site-header">
   <div class="container bar">
     <a class="brand" href="{=site.url}">
-      <!-- BUILDER: replace with the logo, or leave a wordmark if there is none.
-           Two images, one per theme, and main.css swaps them:
-             <img class="logo-light" src="{=site.url('images/logo.png')}" alt="Maree's Tours">
-             <img class="logo-dark" src="{=site.url('images/logo-dark.png')}" alt="" aria-hidden="true"> -->
-      <span class="brand-name">Maree's Tours</span>
+      <img class="logo-light" src="{=site.url('images/logo.svg')}" alt="Maree's Tours, established 2000" width="330" height="96">
+      <img class="logo-dark" src="{=site.url('images/logo-dark.svg')}" alt="" aria-hidden="true" width="330" height="96">
     </a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle menu">
     <label for="nav-toggle" class="nav-toggle"><span></span></label>
     <nav class="site-nav" aria-label="Main navigation">
       <ul>
-        <!-- BUILDER: one <li> per page, mirroring the original site's navigation -->
-        <li><a href="{=site.url}">Home</a></li>
+        <li><a href="{=site.url}"{#if page.data.nav?? && page.data.nav == 'home'} aria-current="page"{/if}>Home</a></li>
+        <li><a href="{=site.url('theatre-events')}"{#if page.data.nav?? && page.data.nav == 'theatre-events'} aria-current="page"{/if}>Theatre Events</a></li>
+        <li><a href="{=site.url('day-trips')}"{#if page.data.nav?? && page.data.nav == 'day-trips'} aria-current="page"{/if}>Day Trips</a></li>
+        <li><a href="{=site.url('extended-trips')}"{#if page.data.nav?? && page.data.nav == 'extended-trips'} aria-current="page"{/if}>Extended Trips</a></li>
+        <li><a href="{=site.url('overseas-trips')}"{#if page.data.nav?? && page.data.nav == 'overseas-trips'} aria-current="page"{/if}>Overseas Trips</a></li>
+        <li><a href="{=site.url('gallery')}"{#if page.data.nav?? && page.data.nav == 'gallery'} aria-current="page"{/if}>Gallery</a></li>
+        <li><a href="{=site.url('newsletter')}"{#if page.data.nav?? && page.data.nav == 'newsletter'} aria-current="page"{/if}>Newsletter</a></li>
+        <li><a href="{=site.url('contact')}"{#if page.data.nav?? && page.data.nav == 'contact'} aria-current="page"{/if}>Contact Us</a></li>
       </ul>
     </nav>
   </div>
